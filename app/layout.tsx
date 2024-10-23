@@ -1,4 +1,5 @@
 import "./../css/globals.css";
+import 'md-editor-rt/lib/style.css';
 
 export const metadata = {
   title: "Next.js",
@@ -12,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body data-mode="dark" className="bg-black">{children}</body>
+      <body className="dark">
+        {children}
+      </body>
     </html>
   );
 }
